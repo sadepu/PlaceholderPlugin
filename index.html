@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width" />
+    
+	<title>Placeholer Plugin</title>
+	
+	<script type="text/javascript" src="js/jquery-1.9.0.js" ></script>
+	<script type="text/javascript" src="js/PlaceholderPlugin.js" ></script>
+	
+	<script type="text/javascript" >
+		
+		$(document).ready(function(){
+			$('#holder1').applyPlaceholder();
+			$('#holder2').applyPlaceholder();
+			
+			$("#formId").applyPlaceholderForAll();
+		});
+		
+	</script>
+</head>
+<body>
+<input type='text' id='holder1' placeholder='Holder One' />
+<input type='text' id='holder2' placeholder='Holder Two' />
+<form id='formId'>
+	<div>
+		<label>First Name:</label>
+		<input type='text' id='fname' placeholder='First Name' />
+	</div>
+	<div>
+		<label>Last Name:</label>
+		<input type='text' id='lname' placeholder='Last Name' />
+	</div>
+	<div>
+		<label>Email:</label>
+		<input type='text' id='email' placeholder='Email Id' />
+	</div>
+	<div>
+		<label>Mobile No.:</label>
+		<input type='text' id='phno' placeholder='Mobile Number' />
+	</div>
+	<div>
+		<label>Address:</label>
+		<textarea id='address' placeholder='Enter your address'></textarea>
+	</div>
+	<div>
+		<label>Password:</label>
+		<input type='password' id='password' placeholder='password' />
+	</div>
+	<div>
+		<label>Confirm Password:</label>
+		<input type='password' id='cpassword' placeholder='' />
+	</div>
+	<div>
+		<button id='submit' tabindex='0' >Submit</button>
+		<button id='reset'>Reset</button>
+	</div>
+	<div>
+	</div>
+	<div>
+	</div>
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
